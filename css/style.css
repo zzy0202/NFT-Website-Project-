@@ -1,0 +1,361 @@
+html,body {
+    width: 1903px;
+    min-width: 1400px;
+}
+.nav {
+    width: 100vw;
+    height: 104px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.logo {
+    flex: 1;
+    height: 100px;
+}
+.logoBox {
+    width: 552px;
+    height: 100px;
+    padding-left: 125px;
+    display: flex;
+    align-items: center;
+}
+.logoImg,.logoImg img{
+    width: 38px;
+    height: 38px;
+}
+.logoName {
+    width: 158px;
+    height: 33px;
+    line-height: 33px;
+    font-size: 24px;
+    margin-left: 10px;
+}
+
+.search {
+    flex: 1;
+    padding-right: 65px;
+    display: flex;
+    align-content: center;
+}
+.searchBox {
+    width: 660px;
+    height: 46px;
+    display: flex;
+    align-items: center;
+}
+.searchList {
+    width: 101px;
+    height: 46px;
+    display: flex;
+    align-items: center;
+    border: 2px solid #efefef;
+    border-top-left-radius: 23px;
+    border-bottom-left-radius: 23px;
+    position: relative;
+}
+.searchListContent {
+    margin-left: 20px;
+    font-size: 14px;
+}
+.searchListIcon {
+    font-size: 10px;
+    padding-left: 21px;
+}
+.searchInput {
+    width: 559px;
+    height: 46px;
+    display: flex;
+    align-items: center;
+    border: 2px solid #efefef;
+    border-left: 1px;
+    border-bottom-right-radius: 23px;
+    border-top-right-radius: 23px;
+    margin-left: 1px;
+}
+.searchInputLogo {
+    width: 30px;
+    height: 44px;
+    line-height: 44px;
+    text-align: center;
+}
+.searchInputText {
+    width: 526px;
+    height: 100%;
+    display: flex;
+    align-items: center;
+}
+.searchInputText,.searchInputText input {
+    width: 500px;
+    height: 90%;
+    border: rgba(0,0,0,0.9);
+    outline: 0;
+}
+.searchInput:focus-within  {
+    box-shadow: 0 0 4px dodgerblue;
+}
+.searchList:hover  {
+    box-shadow: 0 0 4px dodgerblue;
+    cursor: pointer;
+}
+.navList {
+    flex: 1;
+    margin-right: 60px;
+}
+.navItemList {
+    width: 400px;
+    height: 100%;
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+    position: relative;
+}
+.navItem:hover {
+    cursor: pointer;
+}
+.navItem {
+    width: 60px;
+    height: 100px;
+    font-size: 20px;
+    font-weight: 600;
+    text-align: center;
+    line-height: 100px;
+}
+.searchButtonContentList,.shopButtonContentList {
+    width: 105px;
+    background-color: white;
+    align-items: center;
+    flex-direction: column;
+    position: absolute;
+    top:70px;
+    left: 0;
+    box-shadow: 0 0 2px rgba(0,0,0,0.3);
+    border-radius: 8px;
+    display: none;
+    opacity: 0;
+    transition: all 0.4s;
+}
+.searchButtonContentItem {
+    font-size: 14px;
+    width: 100%;
+    height: 24px;
+    padding-top: 6px;
+    text-align: center;
+}
+.shopButtonContentList {
+    width: 170px;
+    top: 100px;
+}
+.shopButtonContentItem {
+    font-size: 14px;
+    width: 100%;
+    height: 45px;
+    padding-top: 6px;
+    padding-left: 55px;
+    line-height: 45px;
+}
+.searchButtonContentItem:hover {
+    background-color: #f0f9ff;
+}
+.shop {
+    position: relative;
+}
+.shopButtonContentItem:hover {
+    color: skyblue;
+    cursor: pointer;
+}
+
+.block {
+    width: 100vw;
+    height: 100vw;
+    background-color: rgba(0,0,0,0.3);
+    display: none;
+    box-sizing: border-box;
+    position: fixed;
+    left: 0;
+    top: 0;
+    z-index: 100;
+}
+.login {
+    width: 400px;
+    height: 100vh;
+    background-color: white;
+    position: absolute;
+    top: 0;
+    right: 0;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+.loginActive {
+    animation: loginActive 0.15s linear;
+    z-index: 100;
+}
+@keyframes loginActive {
+    from {
+        transform: translateX(400px);
+    }
+    to {
+        transform: translateX(0px);
+    }
+}
+.loginInactive {
+    animation: loginInactive 0.15s linear;
+}
+@keyframes loginInactive {
+    from {
+        transform: translateX(0px);
+    }
+    to {
+        transform: translateX(400px);
+    }
+}
+.loginHeader {
+    width: 352px;
+    height: 40px;
+    padding: 12px 24px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+.loginHeaderLeft {
+    height: 40px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.loginHeaderLeft>img {
+    width: 29px;
+    height: 40px;
+}
+.loginHeaderLeft .loginLogoName {
+    margin-left: 8px;
+}
+
+.loginHeaderRight {
+    width: 28px;
+    height: 30px;
+    padding: 1px 16px;
+    font-size: 14px;
+    text-align: center;
+    line-height: 30px;
+    opacity: 0.4;
+}
+.loginHeaderRight:hover {
+    color: blue;
+    opacity: 0.9;
+    cursor: pointer;
+}
+.loginMain {
+    width: 350px;
+    height: 696px;
+    padding: 0 25px;
+    margin-top: 30px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+.loginTitle {
+    width: 350px;
+    height: 48px;
+    line-height: 48px;
+    font-size: 34px;
+    text-align: center;
+    margin-top: 20px;
+}
+
+.describe {
+    font-size: 12px;
+    color: #1B9AEE;
+    width: 350px;
+    height: 12px;
+    line-height: 12px;
+    text-align: center;
+}
+.loginBar {
+    width: 350px;
+    height: 45px;
+    padding-top: 85px;
+    position: relative;
+    display: flex;
+    align-items: center;
+}
+.loginBar>span {
+    height: 21px;
+    padding: 12px 16px;
+    font-size: 14px;
+    line-height: 21px;
+    margin-right: 32px;
+    opacity: 1;
+}
+.loginBar>.active {
+    color: #1B9AEE;
+}
+.loginBar>span:hover {
+    opacity: 0.9;
+    cursor: pointer;
+}
+.breakLine1 {
+    width: 350px;
+    height: 1px;
+    background-color: rgb(232,232,232);
+    position: absolute;
+    bottom: 0;
+    left: 0;
+}
+.activeLine {
+    width: 95px;
+    height: 2px;
+    background-color: rgb(54,144,251);
+    position: absolute;
+    bottom: 0;
+}
+.loginUsername,.loginPassword {
+    width: 328px;
+    height: 39px;
+    padding: 4px 11px;
+    margin-top: 22px;
+    position: relative;
+}
+.loginUsername input,.loginPassword input {
+    border: 0;
+    outline: 0;
+    width: 100%;
+    height: 100%;
+}
+.loginUsername input::-webkit-input-placeholder,
+.loginPassword input::-webkit-input-placeholder{
+    font-size: 14px;
+    color: #d0d0d0;
+}
+.button {
+    margin-top: 55px;
+    width: 350px;
+    height: 46px;
+}
+.button button {
+    width: 350px;
+    height: 46px;
+    background-color: rgb(54,144,251);
+    border: 0;
+    outline: 0;
+    border-radius: 6px;
+    color: white;
+}
+.button button:hover {
+    cursor: pointer;
+    background-color:rgb(85,167,251) ;
+}
+.createAccount {
+    margin-top: 100px;
+    width: 350px;
+    height: 21px;
+    font-size: 14px;
+    line-height: 21px;
+    text-align: center;
+    color: #B0B0B0;
+}
+.createAccount a{
+    text-decoration: none;
+}

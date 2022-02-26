@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Title</title>
+</head>
+<link rel="stylesheet" type="text/css" href="css/swapper.css">
+<body>
+  <div class="swapper">
+    <!-- 轮播的图片集合 -->
+    <div class="imgList"></div>
+    <!-- 切换轮播图的按钮 -->
+    <div class="leftButton"></div>
+    <div class="rightButton"></div>
+    <!-- 显示目前是在第几个轮播图 -->
+    <div class="circleList">
+
+    </div>
+  </div>
+
+</body>
+<script src="js/swapper.js"></script>
+<script>
+  let imgArray = [
+		{isPic:false,src:'image/video1.mp4'},
+		{isPic:false,src:'image/video2.mp4'},
+	]
+  swapper('.swapper',imgArray);
+</script>
+</html>
