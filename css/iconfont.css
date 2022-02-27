@@ -1,8 +1,8 @@
 @font-face {
     font-family: "iconfont"; /* Project id 3207025 */
-    src: url('//at.alicdn.com/t/font_3207025_2chni39k0zw.woff2?t=1645868843837') format('woff2'),
-    url('//at.alicdn.com/t/font_3207025_2chni39k0zw.woff?t=1645868843837') format('woff'),
-    url('//at.alicdn.com/t/font_3207025_2chni39k0zw.ttf?t=1645868843837') format('truetype');
+    src: url('//at.alicdn.com/t/font_3207025_aelon420kfg.woff2?t=1645935511556') format('woff2'),
+    url('//at.alicdn.com/t/font_3207025_aelon420kfg.woff?t=1645935511556') format('woff'),
+    url('//at.alicdn.com/t/font_3207025_aelon420kfg.ttf?t=1645935511556') format('truetype');
 }
 
 .iconfont {
@@ -11,6 +11,14 @@
     font-style: normal;
     -webkit-font-smoothing: antialiased;
     -moz-osx-font-smoothing: grayscale;
+}
+
+.icon-icon_fabu:before {
+    content: "\eb88";
+}
+
+.icon-caidan:before {
+    content: "\e607";
 }
 
 .icon-sousuo:before {

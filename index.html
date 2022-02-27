@@ -2,9 +2,197 @@
 <html lang="en">
 <head>
   <meta charset="UTF-8">
-  <title>Title</title>
+  <title>草方格</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" type="text/css" href="css/normalize.css">
+  <link rel="stylesheet" type="text/css" href="css/style.css">
+  <link rel="stylesheet" type="text/css" href="./css/iconfont.css">
+  <link rel="stylesheet" type="text/css" href="./css/swapper.css">
+  <link rel="stylesheet" type="text/css" href="./css/animate.css">
+  <link rel="icon" href="image/icon.ico" type="image/x-icon">
 </head>
 <body>
+<div class="nav">
+  <div class="logo">
+    <div class="logoBox">
+      <div class="logoImg">
+        <img src="./image/logo.png" alt="logo">
+      </div>
+      <div class="logoName">草方格·Square</div>
+    </div>
+  </div>
+  <div class="search">
+    <div class="searchBox">
+      <div class="searchList">
+        <div class="searchListContent">藏品</div>
+        <div class="searchListIcon iconfont icon-xiangxiajiantou" style="font-size: 14px"></div>
+      </div>
+      <div class="searchInput">
+        <div class="searchInputLogo iconfont icon icon-sousuo"></div>
+        <div class="searchInputText">
+          <input placeholder="请输入搜索数字产品，专辑或艺术家">
+        </div>
+      </div>
+    </div>
+  </div>
+  <div class="navList">
+    <div class="navItemList">
+      <div class="navItem shop">商城</div>
+      <div class="navItem iconfont icon-renzheng"></div>
+      <div class="navItem iconfont icon-qianbao"></div>
+      <div class="navItem iconfont icon-bangzhu"></div>
+    </div>
+  </div>
+</div>
 
+<div class="block">
+  <div class="login">
+    <div class="loginHeader">
+      <div class="loginHeaderLeft">
+        <img src="./image/loginSmallIcon.png" alt="login">
+        <div class="loginLogoName">My Wallet</div>
+      </div>
+      <span class="loginHeaderRight">关闭</span>
+    </div>
+    <div class="loginMain">
+      <img src="./image/loginBigLogo.png" alt="" class="bigLogo">
+      <div class="loginTitle">登录钱包</div>
+      <div class="describe">您即将进入去中心化网络</div>
+      <div class="loginBar">
+        <span class="active">账号登录</span>
+        <span>验证码登录</span>
+        <div class="breakLine1"></div>
+        <div class="activeLine"></div>
+      </div>
+      <div class="loginUsername">
+        <input type="text" placeholder="账户">
+        <div class="breakLine1" style="background-color:rgb(153,153,153);"></div>
+      </div>
+      <div class="loginPassword">
+        <input type="text" placeholder="请输入登入密码">
+        <div class="breakLine1" style="background-color:rgb(153,153,153);"></div>
+      </div>
+      <div class="button">
+        <button>登入</button>
+      </div>
+      <div class="createAccount">没有账户，<a href="#">前往创建</a></div>
+    </div>
+  </div>
+</div>
+
+<div class="swapper">
+  <!-- 轮播的图片集合 -->
+  <div class="imgList"></div>
+  <!-- 切换轮播图的按钮 -->
+  <div class="leftButton"></div>
+  <div class="rightButton"></div>
+  <!-- 显示目前是在第几个轮播图 -->
+  <div class="circleList"></div>
+  <div class="swapperContent">
+    <h1 class="mainTitle">Square</h1>
+    <h3 class="mainDescribe">让价值自由流通</h3>
+    <p>
+      <span>潮流</span>
+      <span>音乐</span>
+      <span>域名</span>
+      <span>虚拟世界</span>
+      <span>收藏品</span>
+      <span>交易卡</span>
+    </p>
+    <div class="buttonBox">
+      <button class="publishContent animate__animated animate__bounceInLeft">
+        <span class="iconfont icon-icon_fabu"></span>
+        <span>发布数字产品</span>
+      </button>
+      <button class="animate__animated animate__bounceInRight">
+        <span class="iconfont icon-caidan"></span>
+        <span>浏览商城</span>
+      </button>
+    </div>
+  </div>
+</div>
+
+  <div class="advantage">
+    <h2 class="advantageBigTitle">优势</h2>
+    <div class="advantageList">
+      <div class="advantageContent">
+        <img class="advantageIcon" src="image/net.png">
+        <div class="advantageTitle">藏品众多</div>
+        <div class="advantageContentText">拥有独家数字藏品，众多前卫创作者，藏品分类涵盖范围广。</div>
+      </div>
+      <div class="advantageContent">
+        <img class="advantageIcon" src="image/secure.png">
+        <div class="advantageTitle">安全可信</div>
+        <div class="advantageContentText">依托区块链溯源，藏品铸造链上留痕，来源可溯，记录可查，版权可信。</div>
+      </div>
+      <div class="advantageContent">
+        <img class="advantageIcon" src="image/fear.png">
+        <div class="advantageTitle">费用更低</div>
+        <div class="advantageContentText">发行手续费低于行业平均水平；数字藏品交易佣金比例低。</div>
+      </div>
+      <div class="advantageContent">
+        <img class="advantageIcon" src="image/clock.png" style="width: 33px;height: 33px">
+        <div class="advantageTitle">铸造更快</div>
+        <div class="advantageContentText">流程操作更便捷，藏品生成更迅速。</div>
+      </div>
+    </div>
+  </div>
+
+  <div class="startGuide">
+    <h2>新手教程</h2>
+    <div class="guideContentBox">
+      <div class="startGuideContent">
+        <img class="guideImage" src="./image/banner1.png">
+        <h3 class="guideTitle">创建账号教程</h3>
+        <div class="guideContent">创建平台账号，提交身份资料，进行身份认证，目前平台提供个人身份及企业身份认证，个人身份认证</div>
+      </div>
+      <div class="startGuideContent">
+        <img class="guideImage" src="./image/banner2.png">
+        <h3 class="guideTitle">购买数字藏品教程</h3>
+        <div class="guideContent">了解藏品的拍卖和购买流程，帮您完成购买心仪的数字藏品的愿望。</div>
+      </div>
+      <div class="startGuideContent">
+        <img class="guideImage" src="./image/banner3.png">
+        <h3 class="guideTitle">发布数字藏品教程</h3>
+        <div class="guideContent">上传您的藏品（图像、视频、音频或3D艺术），添加标题和描述，并自定义您的 数字藏品，包括属性、统计数据和可解锁的内容</div>
+      </div>
+    </div>
+  </div>
+
+  <div class="partner">
+    <h2 class="partnerTitle">合作伙伴</h2>
+    <div class="partnerList">
+      <img src="./image/friend1.png" alt="">
+      <img src="./image/friend2.png" alt="">
+      <img src="./image/friend3.png" alt="">
+      <img src="./image/friend4.png" alt="">
+    </div>
+  </div>
+
+  <div class="copyRight">Copyright © 2022 熊本熊本熊 | 服务条款 | 隐私政策</div>
 </body>
+<script src="./js/header.js"></script>
+<script src="./js/swapper.js"></script>
+<script>
+	let imgArray = [
+		{isPic:false,src:'image/video1.mp4'},
+		{isPic:false,src:'image/video2.mp4'},
+	]
+	swapper('.swapper',imgArray);
+
+	document.addEventListener('scroll',function (e) {
+		console.log(document.documentElement.scrollTop);
+		if(document.documentElement.scrollTop>240) {
+			let advantageList = document.querySelector('.advantageList')
+			advantageList.className = 'advantageList animate__flipInX animate__animated';
+    }
+		if(document.documentElement.scrollTop>550) {
+			let guideContentBox = document.querySelector('.guideContentBox');
+			guideContentBox.children[0].className = 'startGuideContent animate__animated animate__slideInLeft';
+			guideContentBox.children[1].className = 'startGuideContent animate__animated animate__slideInDown';
+			guideContentBox.children[2].className = 'startGuideContent animate__animated animate__slideInRight';
+
+		}
+  })
+</script>
 </html>

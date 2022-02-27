@@ -97,17 +97,32 @@
 	let loginIcon = document.querySelector('.icon-renzheng');
 	let login = document.querySelector('.login');
 	let block = document.querySelector('.block');
-	let quitLogin = document.querySelector('.loginHeaderRight')
-	loginIcon.addEventListener('click',function () {
+	let quitLogin = document.querySelector('.loginHeaderRight');
+	loginIcon.addEventListener('click',function (e) {
+		e.stopPropagation();
 		block.style.display = 'flex';
 		login.classList.add('loginActive');
-		login.classList.remove('loginInactive')
+		login.classList.remove('loginInactive');
+		document.addEventListener('click',function (e) {
+			if(e.pageX<1520) {
+				login.classList.remove('loginActive');
+				login.classList.add('loginInactive');
+				console.log(e.pageX)
+				login.addEventListener('animationend',function () {
+					if(login.className.includes('loginInactive')) {
+						block.style.display = 'none';
+					}
+				})
+			}
+		})
 	})
 	quitLogin.addEventListener('click',function () {
 		login.classList.remove('loginActive');
 		login.classList.add('loginInactive');
-		setTimeout(function (){
-			block.style.display = 'none';
-		},150)
+		login.addEventListener('animationend',function () {
+			if(login.className.includes('loginInactive')>0) {
+				block.style.display = 'none';
+			}
+		})
 	})
 })();

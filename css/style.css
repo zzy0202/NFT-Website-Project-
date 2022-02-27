@@ -3,7 +3,7 @@ html,body {
     min-width: 1400px;
 }
 .nav {
-    width: 100vw;
+    width: 100%;
     height: 104px;
     display: flex;
     justify-content: center;
@@ -358,4 +358,176 @@ html,body {
 }
 .createAccount a{
     text-decoration: none;
+}
+.swapperContent {
+    z-index: 100;
+    width: 600px;
+    height: 800px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    position: absolute;
+    top: 0;
+    left: calc(50% - 300px);
+}
+.swapperContent>.mainTitle {
+    font-size: 60px;
+    color: white;
+    letter-spacing: 7px;
+}
+.swapperContent>.mainDescribe {
+    margin-top: 0;
+    font-size: 40px;
+    color: white;
+    letter-spacing: 6px;
+    margin-bottom: 10px;
+}
+.swapperContent>p span {
+    margin-top: 0;
+    font-size: 14px;
+    color: white;
+    padding: 0 4px;
+}
+.buttonBox {
+    margin-top: 150px;
+}
+.buttonBox button {
+    width: 150px;
+    height: 25px;
+    padding: 15px 30px;
+    box-sizing: content-box;
+    border-radius: 30px;
+    border: 0;
+    outline: 0;
+    margin: 0 20px;
+    background: linear-gradient(45deg,transparent 0% , #f0f5f0);
+    box-shadow: 0 0 7px #322f2f;
+}
+.buttonBox span {
+    color: white;
+    font-size: 16px;
+    margin: 0 4px;
+}
+
+.buttonBox button:hover {
+    cursor: pointer;
+    background: linear-gradient(45deg,lightskyblue , skyblue 50%);
+}
+
+.advantage {
+    width: 100%;
+    height: 190px;
+    display: flex;
+    justify-content: start;
+    align-items: center;
+    flex-direction: column;
+    margin-top: 20px;
+}
+.advantage h2 {
+    font-size: 30px;
+}
+.advantageList {
+    display: flex;
+    width: 100%;
+    height: 180px;
+    justify-content: center;
+    align-items: center;
+}
+.advantageContent {
+    display: flex;
+    width: 270px;
+    height: 42px;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    margin: 0 20px;
+}
+.advantageContent img {
+    width: 38px;
+    height: 38px;
+    margin-bottom: 15px;
+}
+.advantageTitle {
+    font-size: 14px;
+    text-align: center;
+}
+.advantageContent .advantageContentText {
+    font-size: 14px;
+    margin-top: 20px;
+    text-align: center;
+    width: 100%;
+    height: 40px;
+    line-height: 30px;
+    color: #9e9d9d;
+}
+
+.startGuide {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+.guideContentBox {
+    width: 100%;
+    height: 400px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-top: 20px;
+}
+
+.startGuideContent {
+    width: 400px;
+    height: 380px;
+    display: flex;
+    flex-direction: column;
+    justify-content: start;
+    align-items: start;
+    margin: 0 20px;
+    border: 2px solid #efefef;
+    border-radius: 30px;
+    overflow: hidden;
+    box-shadow: 0 0 0 white;
+    transition: all 0.5s;
+}
+
+.startGuideContent:hover {
+    box-shadow: 0 10px 10px #b4b3b3;
+    cursor: pointer;
+}
+
+.startGuideContent img {
+    width: 400px;
+    height: 266px;
+}
+.startGuideContent h3 {
+    font-size: 18px;
+    margin: 20px 30px 4px;
+}
+
+.startGuideContent .guideContent {
+    font-size: 14px;
+    color: #9B9B9B;
+    margin: 4px 15px 4px 30px;
+}
+
+.partner {
+    width: 100%;
+    height: 200px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    margin-top: 80px;
+}
+
+.copyRight {
+    height: 70px;
+    width: 100%;
+    background-color: rgb(231,239,249);
+    text-align: center;
+    line-height: 70px;
+    margin-top: 50px;
 }
