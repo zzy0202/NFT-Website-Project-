@@ -1,6 +1,6 @@
 (function (){
 	let searchButton = document.querySelector('.searchList');//获取搜索按钮
-	let searchButtonContent = ['藏品','专辑','艺术家'];		//搜索按钮里面的内容
+	let searchButtonContent = ['藏品'];		//搜索按钮里面的内容
 
 	let shopButtonContent = ['游戏','小说','域名','收藏品','音乐','艺术品'];		//搜索按钮里面的内容
 	let shopList = document.querySelector('.navItemList');
@@ -29,7 +29,6 @@
 		shopList.appendChild(shopContentDivList);
 	}
 	initSearchButtonContentDiv();
-	
 	let noEnd = false;
 	shop.addEventListener('mouseenter',function () {
 		noEnd = false;
