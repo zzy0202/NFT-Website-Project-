@@ -29,36 +29,7 @@
 		shopList.appendChild(shopContentDivList);
 	}
 	initSearchButtonContentDiv();
-
-	searchButton.addEventListener('click',function (e) {
-		e.stopPropagation();
-		if(!contentDivListIsShow) {
-			searchContentDivList.style.display = 'flex';
-			searchContentDivList.style.zIndex = '100';
-			contentDivListIsShow = !contentDivListIsShow;
-			setTimeout(function () {
-				searchContentDivList.style.opacity = '1';
-			},1)
-			searchContentDivList.addEventListener('click',function (e) {
-				searchListContent.innerHTML = e.target.innerHTML;
-			})
-			document.addEventListener('click',function () {
-				searchContentDivList.style.opacity = '0';
-				setTimeout(function () {
-					searchContentDivList.style.display = 'none';
-				},400)
-				contentDivListIsShow = !contentDivListIsShow;
-			})
-		}
-		else {
-			searchContentDivList.style.opacity = '0';
-			contentDivListIsShow = !contentDivListIsShow;
-			setTimeout(function () {
-				searchContentDivList.style.display = 'none';
-			},400)
-		}
-	})
-
+	
 	let noEnd = false;
 	shop.addEventListener('mouseenter',function () {
 		noEnd = false;
